@@ -1,0 +1,35 @@
+#VRML_SIM R2023b utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/floors/protos/Floor.proto"
+EXTERNPROTO "../protos/WoodenBox.proto"
+EXTERNPROTO "../protos/KukaBox.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/robots/kuka/youbot/protos/Youbot.proto"
+
+WorldInfo {
+}
+Viewpoint {
+  orientation -0.18192399163243025 0.1613074655707829 0.9699915271896213 1.7209888188702704
+  position 0.8508321899382917 -2.8879690743830206 1.2898187453449004
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+Floor {
+}
+DEF youbot Youbot {
+  translation 0.9995550523187202 -8.607808204450397e-06 0.09887518558992293
+  rotation -0.002118800789501951 -4.0992778274840275e-05 0.9999977544988823 3.1415900575717672
+  name "youbot"
+  controller "youbot_gesture_controller_1"
+  supervisor TRUE
+}
+DEF KukaBox KukaBox {
+  translation 0 0 0.0125
+  rotation 0.5241245899354336 0.8318674684296331 0.18245527998248448 1.3134986890111053e-15
+}
+WoodenBox {
+  translation 0.8 0.8 0.3
+}
